@@ -1,0 +1,37 @@
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 400;
+    background-color: #BB86FC;
+    color: white;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.form-control {
+    margin-top: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.form-control input {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.form-control span {
+    margin-right: 20px;
+}
