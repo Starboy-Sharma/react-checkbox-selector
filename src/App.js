@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
@@ -53,14 +53,17 @@ function App() {
       // update state
       setPreferences(updatedPreference);
 
+    }
+
+    // check preferences are updated then we will check if all check box are selected then mark select all else mark false
+    useEffect(() => {
+
       // we also check if all items are selected
       let allChecked =  preferences.every(preference => preference.selected === true);
       
-      if (allChecked === true) {
-        setAllFav(allChecked);
-      }
-
-    }
+      setAllFav(allChecked);
+      
+    }, [preferences])
 
 
   return (
